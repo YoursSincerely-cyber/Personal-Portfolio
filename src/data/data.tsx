@@ -9,10 +9,8 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
+import FacebookIcon from "../components/Icon/FacebookIcon";
 import InstagramIcon from '../components/Icon/InstagramIcon';
-import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -25,7 +23,7 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
+import profilepic from '/public/images/banner_bg.jpeg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -69,18 +67,18 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Hasee Afridi.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
+        I'm a Pakistan based <strong className="text-stone-100">Front-End Web Developer</strong>, currently looking
+        for an <strong className="text-stone-100">Internship.</strong> Eager to help build a modern, mobile-first, domain
         registrar and site builder.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+      In my free time, I love exploring new adventures whether it's <strong className="text-stone-100">hiking</strong>,
+      hrough scenic trails, capturing moments with <strong className="text-stone-100">photography</strong>
+      , or diving into creative <strong className="text-stone-100">coding projects</strong> that bring ideas to life.{' '}
       </p>
     </>
   ),
@@ -108,12 +106,12 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Karachi', Icon: MapIcon},
+    {label: 'Age', text: '20', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Pakistani', Icon: FlagIcon},
+    {label: 'Interests', text: 'Sports, Gym', Icon: SparklesIcon},
+    {label: 'Study', text: 'Ned University', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Seeking internship', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -129,12 +127,12 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'French',
+        name: 'Urdu',
         level: 4,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'Turkish',
+        level: 1,
       },
     ],
   },
@@ -150,7 +148,7 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
       {
-        name: 'GraphQL',
+        name: 'Nextjs',
         level: 6,
       },
     ],
@@ -172,23 +170,23 @@ export const skills: SkillGroup[] = [
       },
     ],
   },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
-    ],
-  },
+  // {
+  //   name: 'Mobile development',
+  //   skills: [
+  //     {
+  //       name: 'React Native',
+  //       level: 9,
+  //     },
+  //     {
+  //       name: 'Flutter',
+  //       level: 4,
+  //     },
+  //     {
+  //       name: 'Swift',
+  //       level: 3,
+  //     },
+  //   ],
+  // },
 ];
 
 /**
@@ -268,15 +266,15 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
+    date: 'October 2023',
+    location: 'Ned University',
+    title: 'Bachelors in Telecommunication',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
+    date: 'March 2021',
+    location: 'FalconHouse Grammar School',
+    title: 'Matriculation',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
 ];
@@ -313,19 +311,19 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Haseen Khan',
+      text: 'I’ve been thoroughly impressed by this portfolio! The design is sleek, modern, and incredibly user-friendly. Every project is showcased beautifully, and the attention to detail is evident. As a web designer myself, I really appreciate the clean aesthetic and seamless navigation. It’s clear that a lot of thought and effort went into every aspect of this portfolio. Highly recommend checking it out!',
+      image: 'https://th.bing.com/th/id/OIP.IhHfxrnrxZcij7AAwZrnZQAAAA?w=115&h=190&c=7&r=0&o=5&dpr=1.3&pid=1.7',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Omer Khan',
+      text: 'This portfolio is a great example of how to effectively present both technical skills and creativity. I was particularly impressed by how each project is explained with clarity, showing the thought process behind every solution. It’s not only visually appealing, but it also demonstrates a high level of professionalism and skill in the work. This portfolio is a fantastic showcase of expertise and dedication!',
+      image: 'https://th.bing.com/th/id/OIP.IzipPT7JyLJxY7HbTWRUkAHaHa?w=190&h=190&c=7&r=0&o=5&dpr=1.3&pid=1.7',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Someone Me',
+      text: `I absolutely love how this portfolio captures the essence of both creativity and practicality. It’s clear that the creator has a deep understanding of design principles, but what really stands out is the ability to translate those skills into real-world applications. The projects are diverse, and the layout is clean and easy to navigate. It's the perfect example of a professional portfolio that speaks volumes about someone's capabilities.`,
+      image: 'https://th.bing.com/th/id/OIP.47sG9d2l51fPG3gIr7CbEgHaHa?w=207&h=207&c=7&r=0&o=5&dpr=1.3&pid=1.7',
     },
   ],
 };
@@ -340,22 +338,21 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'haseenafridi10@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Karachi, Pakistan',
+      // href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
+      text: '@haseen__afridi',
       href: 'https://www.instagram.com/tbakerx/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
+      text: 'haseenafridi10',
       href: 'https://github.com/tbakerx',
     },
   ],
@@ -365,9 +362,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/haseenafridi10'},
+  // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
+  {label: 'Facebook', Icon: FacebookIcon, href: 'https://www.facebook.com/haseenafridi10@gmail.com'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/haseen__afridi/'},
+  // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
