@@ -42,8 +42,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'My portfolio',
+  description: "Personal portfolio designed to showcase my expertise",
 };
 
 /**
@@ -67,7 +67,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Hasee Afridi.`,
+  name: `I'm Haseen Afridi.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -102,9 +102,8 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `As a Front-end Developer, my key purpose is to build scalable, responsive
+  and secure websites using latest Tech stacks.`,
   aboutItems: [
     {label: 'Location', text: 'Karachi', Icon: MapIcon},
     {label: 'Age', text: '20', Icon: CalendarIcon},

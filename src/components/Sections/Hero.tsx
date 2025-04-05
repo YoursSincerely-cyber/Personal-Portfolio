@@ -7,6 +7,7 @@ import {heroData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 import Socials from '../Socials';
 
+
 const Hero: FC = memo(() => {
   const {imageSrc, name, description, actions} = heroData;
 

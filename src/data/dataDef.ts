@@ -27,7 +27,7 @@ export interface Hero {
   actions: HeroActionItem[];
 }
 
-interface HeroActionItem {
+export interface HeroActionItem {
   href: string;
   text: string;
   primary?: boolean;
